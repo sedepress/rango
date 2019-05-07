@@ -1,0 +1,2 @@
+# rango
+a Python study
