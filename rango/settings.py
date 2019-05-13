@@ -129,3 +129,6 @@ STATICFILES_DIRS = [STATIC_DIR, ]
 
 MEDIA_ROOT = MEDIA_DIR
 MEDIA_URL = '/media/'
+
+# 重定向
+LOGIN_URL = '/app/login/'

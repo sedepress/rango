@@ -1,11 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Rango</title>
-</head>
-<body>
-    <h1>Add a Category</h1>
+{% extends 'app/base.html' %}
+{% load staticfiles %}
+{% block body_block %}
+<h1>Add a Category</h1>
     <div>
         <form action="{% url 'app:add_category' %}" id="category_form" method="post">
             {% csrf_token %}
@@ -20,5 +16,4 @@
             <input type="submit" name="submit" value="Create Category" />
         </form>
     </div>
-</body>
-</html>
+{% endblock %}
